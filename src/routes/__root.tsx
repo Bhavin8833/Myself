@@ -85,9 +85,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Bhavin Parmar — Portfolio" },
       { property: "og:description", content: "Cinematic interactive portfolio showcasing analytics, AI, web development and marketing work." },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: `https://wsrv.nl/?url=myself-navy-mu.vercel.app${logoUrl}&bg=white&output=jpg&w=1200&h=630&fit=contain` },
+      { property: "og:image", content: `https://myself-navy-mu.vercel.app${logoUrl}` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `https://wsrv.nl/?url=myself-navy-mu.vercel.app${logoUrl}&bg=white&output=jpg&w=1200&h=630&fit=contain` },
+      { name: "twitter:image", content: `https://myself-navy-mu.vercel.app${logoUrl}` },
     ],
     links: [
       {
