@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoSrc from "@/assets/LOGO.png";
+import logoSrc from "@/assets/LOGO-Photoroom j.png";
 
 let cachedTransparentLogo: string | null = null;
 
