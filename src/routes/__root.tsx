@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import logoUrl from "../assets/LOGO.png";
+import ogImage from "../assets/bhavin-portrait.jpg";
 import { ParticleBackground } from "../components/ParticleBackground";
 
 function NotFoundComponent() {
@@ -85,7 +86,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Bhavin Parmar — Portfolio" },
       { property: "og:description", content: "Cinematic interactive portfolio showcasing analytics, AI, web development and marketing work." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:image", content: ogImage },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: ogImage },
     ],
     links: [
       {
