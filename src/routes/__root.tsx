@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import logoUrl from "../assets/LOGO-Photoroom j.png";
+import logoUrl from "../assets/LOGO.png";
 import { ParticleBackground } from "../components/ParticleBackground";
 
 function NotFoundComponent() {
