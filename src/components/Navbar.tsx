@@ -41,7 +41,7 @@ export function Navbar() {
     >
       <nav className="glass-strong flex w-full max-w-5xl items-center justify-between rounded-full px-5 py-3 md:px-6">
         <a href="#home" className="flex items-center gap-2.5 font-display text-base font-semibold">
-          <Logo className="h-9 w-auto object-contain" />
+          <Logo className="h-7 md:h-9 w-auto object-contain" />
           <span>Bhavin <span className="text-muted-foreground">Parmar</span></span>
         </a>
 

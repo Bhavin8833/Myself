@@ -197,25 +197,27 @@ export function Portfolio() {
               <button
                 onClick={() => setOpen(p)}
                 data-cursor="hover"
-                className="relative w-full overflow-hidden rounded-3xl glass-strong text-left block"
+                className="relative w-full overflow-hidden rounded-3xl glass-strong text-left flex flex-col md:block"
               >
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  loading="lazy"
-                  className="w-full h-auto block transition-transform duration-[1200ms] group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-8 md:p-12">
-                  <div className="mb-2 text-sm md:text-base uppercase tracking-widest text-primary font-medium">
+                <div className="w-full relative">
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    loading="lazy"
+                    className="w-full h-auto block transition-transform duration-[1200ms] group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent hidden md:block" />
+                </div>
+                <div className="relative md:absolute inset-x-0 bottom-0 p-6 md:p-12 bg-card/40 md:bg-transparent z-10 w-full">
+                  <div className="mb-2 text-xs md:text-base uppercase tracking-widest text-primary font-medium">
                     {p.tag}
                   </div>
-                  <div className="font-display text-4xl md:text-5xl lg:text-6xl">{p.title}</div>
-                  <div className="mt-4 inline-flex translate-y-2 items-center gap-2 text-sm md:text-base font-medium opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                  <div className="font-display text-2xl md:text-5xl lg:text-6xl">{p.title}</div>
+                  <div className="mt-4 inline-flex translate-y-0 md:translate-y-2 items-center gap-2 text-xs md:text-base font-medium opacity-80 md:opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     Open case <ExternalLink size={16} />
                   </div>
                 </div>
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-foreground/5 transition-all group-hover:ring-primary/40" />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-foreground/5 transition-all group-hover:ring-primary/40 z-20" />
               </button>
             </Reveal>
           ))}
@@ -227,25 +229,27 @@ export function Portfolio() {
               <button
                 onClick={() => setOpen(p)}
                 data-cursor="hover"
-                className="relative w-full overflow-hidden rounded-3xl glass-strong text-left block"
+                className="relative w-full overflow-hidden rounded-3xl glass-strong text-left flex flex-col md:block"
               >
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  loading="lazy"
-                  className="w-full h-auto block transition-transform duration-[1200ms] group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-6">
-                  <div className="mb-1 text-xs uppercase tracking-widest text-primary">
+                <div className="w-full relative">
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    loading="lazy"
+                    className="w-full h-auto block transition-transform duration-[1200ms] group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent hidden md:block" />
+                </div>
+                <div className="relative md:absolute inset-x-0 bottom-0 p-5 md:p-6 bg-card/40 md:bg-transparent z-10 w-full">
+                  <div className="mb-1 text-[10px] md:text-xs uppercase tracking-widest text-primary">
                     {p.tag}
                   </div>
-                  <div className="font-display text-2xl">{p.title}</div>
-                  <div className="mt-2 inline-flex translate-y-2 items-center gap-1 text-xs opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                  <div className="font-display text-xl md:text-2xl">{p.title}</div>
+                  <div className="mt-3 inline-flex translate-y-0 md:translate-y-2 items-center gap-1 text-[10px] md:text-xs font-medium opacity-80 md:opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     Open case <ExternalLink size={12} />
                   </div>
                 </div>
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-foreground/5 transition-all group-hover:ring-primary/40" />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-foreground/5 transition-all group-hover:ring-primary/40 z-20" />
               </button>
             </Reveal>
           ))}
