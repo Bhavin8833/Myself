@@ -116,11 +116,11 @@ export function Contact() {
                     <div className="glass flex size-11 items-center justify-center rounded-2xl">
                       <f.icon size={16} className="text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-xs uppercase tracking-widest text-muted-foreground">
                         {f.label}
                       </div>
-                      <div className="text-sm">{f.value}</div>
+                      <div className="text-sm break-all">{f.value}</div>
                     </div>
                   </div>
                 ))}
