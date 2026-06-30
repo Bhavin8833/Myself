@@ -91,7 +91,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-32">
+    <section id="contact" className="relative py-20 md:py-32 scroll-mt-24 md:scroll-mt-32">
       <Confetti on={boom} />
       <div className="container mx-auto px-6">
         <div className="mb-12 max-w-3xl">

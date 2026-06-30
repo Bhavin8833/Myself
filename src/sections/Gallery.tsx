@@ -227,7 +227,7 @@ export function Gallery() {
   const nextImg = currentIndex < filtered.length - 1 ? filtered[currentIndex + 1].src : filtered[0]?.src;
 
   return (
-    <section id="gallery" className="relative py-32">
+    <section id="gallery" className="relative py-20 md:py-32 scroll-mt-24 md:scroll-mt-32">
       <div className="container mx-auto px-6">
         <div className="mb-12 max-w-3xl">
           <h2 className="font-display text-3xl font-semibold uppercase tracking-wider text-primary md:text-4xl">

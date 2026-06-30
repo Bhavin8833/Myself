@@ -87,7 +87,7 @@ function Ring({ label, value }: { label: string; value: number }) {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-32">
+    <section id="skills" className="relative py-20 md:py-32 scroll-mt-24 md:scroll-mt-32">
       <div className="container mx-auto px-6">
         <div className="mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">

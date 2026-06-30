@@ -39,7 +39,7 @@ const timeline = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-32">
+    <section id="about" className="relative py-20 md:py-32 scroll-mt-24 md:scroll-mt-32">
       <div className="container mx-auto grid gap-16 px-6 lg:grid-cols-2 lg:gap-24">
         <Reveal className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl glass-strong">
